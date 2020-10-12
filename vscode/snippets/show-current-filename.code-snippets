@@ -1,0 +1,7 @@
+{
+  "show current filename": {
+    "prefix": "showcfn",
+    "body": ["$TM_FILENAME_BASE"],
+    "description": "show current filename"
+  }
+}

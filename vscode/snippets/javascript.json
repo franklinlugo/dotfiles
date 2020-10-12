@@ -1,0 +1,32 @@
+{
+  "console log": {
+    "prefix": "csll",
+    "body": "console.log(\"$1=>\", $1)",
+    "description": "console log"
+  },
+  "console clear": {
+    "prefix": "cslc",
+    "body": "console.clear()",
+    "description": "console clear"
+  },
+  "test": {
+    "prefix": "test",
+    "body": ["test('$1', () => {", "  $2", "});"],
+    "description": "test"
+  },
+  "describe": {
+    "prefix": "describe",
+    "body": ["describe('$1', () => {", "  $2", "});"],
+    "description": "describe"
+  },
+  "React useEffect": {
+    "prefix": "useEffect",
+    "body": ["useEffect(() => {", "  $1", "}, []);"],
+    "description": "React useEffect"
+  },
+  "define prop-types": {
+    "prefix": "dpt",
+    "body": ["$TM_FILENAME_BASE.propTypes = {", "  $1: $2,", "}"],
+    "description": "define prop-types"
+  }
+}

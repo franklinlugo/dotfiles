@@ -1,0 +1,55 @@
+{
+  /*
+	// Place your snippets for PHP here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+	*/
+  "wpconfigdebug": {
+    "prefix": "wpconfig",
+    "body": [
+      "//Activar modo WP_DEBUG",
+      "define('WP_DEBUG',\ttrue);",
+      "",
+      "//\tActivar\tregistro\tde\tdepuración\tal\tfichero\t/wp-content/debug.log",
+      "define('WP_DEBUG_LOG',\ttrue);",
+      "",
+      "//\tDesactiva\tmostrar\tlos\terrores\ty\tavisos\t",
+      "define('WP_DEBUG_DISPLAY',\ttrue);",
+      "",
+      "//\tUsa\tversiones\tdev\tde\tficheros\tcentrales\tJS\ty\tCSS\t(solo\tnecesario\tsi\testás\tmodificando\tesos\tficheros\tcentrales)",
+      "define('SCRIPT_DEBUG',\ttrue);",
+      "",
+      "//\tlog\tde\terrores\tde\tphp",
+      "@ini_set('log_errors','On');\t//\thabilitar\to\tdeshabilitar\tel\tregistro\tde\terrores\tphp\t(utiliza\t'On'\tu\t'Off')",
+      "@ini_set('display_errors','On');\t//\tactivar\to\tdesactivar\tla\texhibición\tpública\tde\tlos\terrores\t(utiliza\t'On'\tu\t'Off')",
+      "@ini_set('error_log','/opt/lampp/htdocs/siteurl/php-errors.log');\t//\truta\tdel\tarchivo\tde\tlog\tdel\tservidor\tcon\tpermisos\tde\tescritura",
+      "",
+      "define('FS_METHOD','direct');",
+      "define('FS_CHMOD_DIR',0755);",
+      "define('FS_CHMOD_FILE',0644);",
+      "define('WP_TEMP_DIR',dirname(__FILE__).'/wp-content/uploads');",
+      "define(\t'WP_SITEURL',\t'http://localhost/siteurl'\t);",
+      "define(\t'WP_HOME',\tWP_SITEURL\t);"
+    ],
+    "description": "commons lines to wordpress wp-config.php"
+  },
+  "php": {
+    "prefix": "php",
+    "body": [
+      "<?php",
+      "\t$1",
+      "?>"
+    ],
+    "description": "php tag"
+  }
+}
