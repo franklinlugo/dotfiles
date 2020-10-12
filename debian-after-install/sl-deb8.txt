@@ -1,0 +1,16 @@
+# Repositorio base
+deb http://ftp.es.debian.org/debian jessie main contrib non-free
+
+# Actualizaciones de seguridad
+deb http://security.debian.org/ jessie/updates main contrib non-free
+
+# Actualizaciones de Stable
+deb http://ftp.es.debian.org/debian jessie-updates main contrib non-free
+deb http://ftp.es.debian.org/debian jessie-proposed-updates main contrib non-free
+
+# Repositorio backports de Stable
+deb http://ftp.es.debian.org/debian jessie-backports main contrib non-free
+
+# Repositorios Multimedia
+# apt-get install deb-multimedia-keyring
+deb http://www.deb-multimedia.org jessie main non-free
