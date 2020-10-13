@@ -1,8 +1,7 @@
 alias updatebashaliases='. ~/.bash_aliases'
 alias editbashaliases='vim ~/.bash_aliases'
-alias zshconf="vim ~/.zshrc"
-alias tmuxconf="vim ~/.tmux.conf"
-alias tmuxlocalconf="vim ~/.tmux.conf.local"
+alias editzshconf="vim ~/.zshrc"
+alias edittmuxconf="vim ~/.tmux.conf"
 
 # pendrive utils
 alias um1='umount /dev/sdb1'
