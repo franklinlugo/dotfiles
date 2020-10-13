@@ -1,9 +1,8 @@
-# Alias update
-alias zaa='. ~/.bash_aliases'
-alias zea='subl ~/.bash_aliases'
-alias zshconf="subl ~/.zshrc"
-alias tmuxconf="subl ~/.tmux.conf"
-alias tmuxlocalconf="subl ~/.tmux.conf.local"
+alias updatebashaliases='. ~/.bash_aliases'
+alias editbashaliases='vim ~/.bash_aliases'
+alias zshconf="vim ~/.zshrc"
+alias tmuxconf="vim ~/.tmux.conf"
+alias tmuxlocalconf="vim ~/.tmux.conf.local"
 
 # pendrive utils
 alias um1='umount /dev/sdb1'
@@ -18,17 +17,13 @@ alias drbl1='bash /media/DRBL/utils/linux/makeboot.sh /dev/sdb1'
 alias drbl2='bash /media/DRBL/utils/linux/makeboot.sh /dev/sdc1'
 
 ## Paths
-alias home='cd /home/franklin.lugo/'
-alias root='cd /root/'
-alias esc='cd /home/franklin.lugo/Desktop/'
-alias des='cd /home/franklin.lugo/Downloads/'
-alias doc='cd /home/franklin.lugo/Documents/'
-alias pic='cd /home/franklin.lugo/Pictures/'
-alias repo='cd /home/franklin.lugo/repositories/ && l'
+alias home='cd $HOME'
+alias desktop='cd $HOME/Desktop/'
+alias downloads='cd $HOME/Downloads/'
+alias documents='cd $HOME/Documents/'
+alias pictures='cd $HOME/Pictures/'
+alias repo='cd $HOME/repositories/ && l'
 alias opt='cd /opt/'
-alias htd='cd /opt/lampp/htdocs/ && l'
-alias wpp='cd wp-content/plugins && l'
-alias wpt='cd wp-content/themes && l'
 
 ## Commons
 alias l='ls $LS_OPTIONS -lA --color=auto'
@@ -45,8 +40,6 @@ alias dmp3='youtube-dl --extract-audio --audio-format mp3'
 alias cl="clear"
 
 ## development
-alias s='subl . -a'
-alias ks='pkill subl'
 alias c='code .'
 alias kc='pkill code'
 alias dnm='rm -rf node_modules && npm install'
@@ -66,14 +59,6 @@ alias gpod='git push origin develop'
 alias gsc='git diff --name-only --diff-filter=U'
 alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches"
 alias gbd="git branch -D"
-
-# Wordpress
-alias wpdownload='wp core download --locale=es_ES'
-alias wpinstall='wp core install --url=localhost/ --title= --admin_user=admin --admin_password=admin --admin_email=admin@admin.com'
-alias wpinit='touch .htaccess && sudo chown franklin:daemon .htaccess && sudo chmod 775 .htaccess && sudo chown -R franklin:daemon wp-content && sudo chmod 775 -R wp-content'
-alias wpipd='wp plugin install developer show-current-template theme-check --activate'
-alias wpiwc='wp plugin install woocommerce --activate'
-alias wpudp='wp plugin uninstall hello akismet'
 
 # utils
 alias crea=createEnterDir
@@ -96,7 +81,7 @@ alias deletebugbranch='git branch -D $bugbranch'
 alias gcbb='git checkout $bugbranch'
 alias gpbb='git push origin $bugbranch'
 
-featurebranch='feature/TPPORTAL-2148-informacion-de-facturacion-e-iibb-modo-edicion'
+featurebranch='feature/'
 alias createfeaturebranch='git checkout -B $featurebranch'
 alias deletefeaturebranch='git branch -D $featurebranch'
 alias gcfb='git checkout $featurebranch'
