@@ -42,13 +42,15 @@ alias cl="clear"
 alias c='code .'
 alias kc='pkill code'
 alias dnm='rm -rf node_modules && npm install'
+alias dnmy='rm -rf node_modules && yarn install'
 alias dnmas='rm -rf node_modules && npm install && npm start'
+alias dnmasy='rm -rf node_modules && yarn install && yarn start'
 alias nrt='npm run test'
 alias nrtw='npm run test'
 alias nrc='npm run coverage'
 alias ns='npm start'
 alias ys='yarn start'
-
+alias openchromeignoressl='google-chrome --ignore-certificate-errors --unsafely-treat-insecure-origin-as-secure=https://127.0.0.1 --user-data-dir=/tmp/foo:'
 
 #Git
 trackallbranches(){ git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done }
@@ -73,6 +75,7 @@ function homestead() {
 }
 
 # vscode folders
+alias openhealthinsurance='code src/views/Admin/Records/HealthInsurance'
 
 bugbranch='bugfix/'
 alias createbugbranch='git checkout -B $bugbranch'
@@ -80,7 +83,7 @@ alias deletebugbranch='git branch -D $bugbranch'
 alias gcbb='git checkout $bugbranch'
 alias gpbb='git push origin $bugbranch'
 
-featurebranch='feature/'
+featurebranch='feature/records-health-insurance'
 alias createfeaturebranch='git checkout -B $featurebranch'
 alias deletefeaturebranch='git branch -D $featurebranch'
 alias gcfb='git checkout $featurebranch'
@@ -104,5 +107,5 @@ alias mongostop="sudo systemctl stop mongod"
 alias mongostatus="sudo systemctl status mongod"
 alias mongorestart="sudo systemctl restart mongod"
 
-#firefox
-alias openfirefox51="/opt/firefox51/firefox -P"
+#VPN DDS
+alias connectvpndds="sudo openfortivpn -c vpn-dds"
